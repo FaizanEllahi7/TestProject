@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F906E9A4225488CC002FE3DA /* Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = F906E9A2225488CC002FE3DA /* Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F906E9AB225488FA002FE3DA /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906E9AA225488FA002FE3DA /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F906E99F225488CC002FE3DA /* Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F906E9A2225488CC002FE3DA /* Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Testing.h; sourceTree = "<group>"; };
 		F906E9A3225488CC002FE3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F906E9AA225488FA002FE3DA /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				F906E9A2225488CC002FE3DA /* Testing.h */,
+				F906E9AA225488FA002FE3DA /* test.swift */,
 				F906E9A3225488CC002FE3DA /* Info.plist */,
 			);
 			path = Testing;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					F906E99E225488CC002FE3DA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F906E9AB225488FA002FE3DA /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		F906E9A8225488CC002FE3DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.venturedive.Testing;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		F906E9A9225488CC002FE3DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
